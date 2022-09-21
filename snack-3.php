@@ -47,9 +47,13 @@ $posts = [
 
 
 foreach ($posts as $date => $value) {
-    echo "<div> $date </div>";
+    // var_dump($date);
+    echo "<h2> $date <br/> </h2>";;
     foreach ($value as $post) {
-        echo  $post;
+        // var_dump($post);
+        echo  "<h3>$post[title]</h3>";
+        echo "<h5>$post[author]</h5>";
+        echo "<p>$post[text]</p>";
     }
 }
 
