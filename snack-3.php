@@ -48,8 +48,8 @@ $posts = [
 
 foreach ($posts as $date => $value) {
     echo "<div> $date </div>";
-    foreach ($date as $value) {
-        echo  $value;
+    foreach ($value as $post) {
+        echo  $post;
     }
 }
 
