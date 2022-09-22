@@ -10,23 +10,23 @@ Stampare Nome, Cognome e la media dei voti di ogni alunno. -->
 $alunni = [
     [
         'name' => 'Fabio',
-        'last_name' => 'De Fabis',
-        'votes' => [7, 4, 6, 8, 5]
+        'lastName' => 'De Fabis',
+        'votes' => [7, 4, 6, 8]
     ],
     [
         'name' => 'Marco',
-        'last_name' => 'De Marchis',
-        'votes' => [4, 9, 10, 8, 5]
+        'lastName' => 'De Marchis',
+        'votes' => [4, 9, 10, 8]
     ],
     [
         'name' => 'Mario',
-        'last_name' => 'De Mari',
-        'votes' => [6, 8, 3, 4, 7]
+        'lastName' => 'De Mari',
+        'votes' => [6, 8, 3, 4]
     ],
     [
         'name' => 'Franco',
-        'last_name' => 'De Franchi',
-        'votes' => [6, 6, 7, 7, 8]
+        'lastName' => 'De Franchi',
+        'votes' => [6, 6, 7, 7]
     ],
 ];
 
@@ -35,11 +35,11 @@ $alunni = [
 foreach ($alunni as $value) {
 ?>
     <div>
-        <h4>
+        <strong>
             <?=
-            "{$value['name']} {$value['last_name']}";
+            "{$value['name']} {$value['lastName']}";
             ?>
-        </h4>
+        </strong>
         <p>
             Media:
             <?=
