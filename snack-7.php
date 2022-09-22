@@ -43,7 +43,7 @@ foreach ($alunni as $value) {
         <p>
             Media:
             <?=
-            array_sum($value['votes']) / count($value['votes']);
+            round(array_sum($value['votes']) / count($value['votes']), 1 );
             ?>
         </p>
     </div>
